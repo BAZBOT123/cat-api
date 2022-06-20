@@ -6,7 +6,7 @@ The user will initially be located tp http://localhost:3000/ after commanding 'n
 
 When the user will be directed to the live server where the page of the UI is displayed, the user can have the option to view various imagery of various cats by clicking onto a generate button where various images are retrieved using an api url.
 
-The user will have the benefit to view some animations when clicking onto the generate button and the color scheme was used to give out a playful vibe for a friendly user experience.
+The user will have the benefit to view some animations when clicking onto the generate button and the color scheme was used to give off a playful vibe for a friendly user experience.
 
 # live server display
 ![main page](./assets/app_image.png)
@@ -21,8 +21,3 @@ $ npm ci # install dependencies
 $ npm start
 # then point your browser to localhost:3000
 ```
-
-# Project Description
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
