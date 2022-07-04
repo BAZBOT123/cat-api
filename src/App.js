@@ -3,15 +3,16 @@ import { useEffect, useState } from 'react'
 
 function App() {
 
-  const [fact, setFact] = useState('')
+  const [image, setImage] = useState('')
   const [counter, setCounter] = useState(0)
+  const url = 'https://api.thecatapi.com/v1/images/search'
 
   useEffect(() => {
-    fetch('https://api.thecatapi.com/v1/images/search')
-      .then(response => response.json())
+    fetch(url)
+      .then(res => res.json())
       .then(json => {
         console.log(json[0])
-        setFact(json[0].url)
+        setImage(json[0].url)
       })
   },
     //fetch will be executed once, the counter has been used.
@@ -25,7 +26,7 @@ function App() {
     </div>
     <button className='button-generator' onClick={() => setCounter(counter + 1)}> Generate </button>
     <div className='image-container'>
-      <img src={fact} alt="images" />
+      <img src={image} alt="images" />
     </div>
   </div>
 );
